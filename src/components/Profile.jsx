@@ -1,21 +1,11 @@
 import React from "react";
-import Header from "./components/Header";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-  useHistory,
-} from "react-router-dom";
-// import Head from "next/head";
+import Header from "./Header";
 
-function Profile() {
+function Profile({pageRefs}) {
   return (
+    <>
+    <Header pageRefs={pageRefs} />
     <div className="bg-gray-100 h-screen">
-      {/* <Head>
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
-      </Head> */}
-      <Header />
       <div className="bg-white mx-16 rounded-l-3xl flex justify-between">
         <div>
           <p className="font-black pt-10 pl-12 text-lg">My Profile</p>
@@ -83,6 +73,7 @@ function Profile() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
