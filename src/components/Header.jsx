@@ -22,7 +22,7 @@ function Header({ pageRefs }) {
     <GoogleOAuthProvider clientId="1047839081489-v1v1dubc557qiqq36mhag4neskapnurk.apps.googleusercontent.com">
       <header className="sticky top-0 z-50 grid grid-cols-2 bg-gray-100 py-5 px-5 md:px-10">
           <div className="relative flex items-center h-10 cursor-pointer my-auto">
-        <Link to='/'>
+        <Link to='/' onClick={() => scrollIntoView("home")}>
             <img
               src="logo.png"
               layout="fill"

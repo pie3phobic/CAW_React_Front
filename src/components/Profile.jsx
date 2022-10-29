@@ -1,7 +1,10 @@
 import React from "react";
+import Header from "./Header";
 
-function Profile() {
+function Profile({pageRefs}) {
   return (
+    <>
+    <Header pageRefs={pageRefs} />
     <div className="bg-gray-100 h-screen">
       <div className="bg-white mx-16 rounded-l-3xl flex justify-between">
         <div>
@@ -70,6 +73,7 @@ function Profile() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
